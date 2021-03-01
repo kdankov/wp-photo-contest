@@ -1,0 +1,16 @@
+.button,
+.gform_button {
+	display: block;
+	border: 0px solid transparent !important;
+	background: #090;
+	color: #FFF;
+	font-weight: bold;
+	padding: 0.8em 1.3em !important;
+	cursor: pointer;
+	transition: background-color 0.3s ease-out;
+	border-radius: 0.35em;
+
+	&:hover {
+		background: #080;
+	}
+}

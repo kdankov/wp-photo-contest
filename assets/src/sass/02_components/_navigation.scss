@@ -1,0 +1,48 @@
+/*
+ * Navigation
+ */
+
+.main-navigation {
+	margin-left: auto;
+}
+
+.menu {
+	display: flex;
+	
+	li {
+		list-style: none outside;
+		display: block;
+		margin-left: 1em;
+	}
+
+	a {
+		display: block;
+		padding: 1em 1.7em;
+		background-color: rgba(0,0,0,0.1);
+		font-weight: bold;
+		color: #333;
+		border-radius: 0.3em;
+		transition: background 0.3s ease, color 0.3s ease;
+
+		&:hover {
+			background-color: rgba(0,0,0,0.6);
+			color: #FFF;
+		}
+	}
+
+	.upload-a-photo a {
+		background: #f6653c;
+		color: #FFF;
+		display: none;
+	}
+
+	.current-menu-item a {
+		background: rgba(#090, 0.1);
+		color: #090;
+	}
+}
+
+.single-contest .menu .upload-a-photo a {
+	display: block;
+}
+

@@ -1,0 +1,36 @@
+.page-template-login {
+	.main-navigation {
+		display: none;
+	}
+
+	#loginform {
+		padding: 2em;
+		background: #EEE;
+		border-radius: 0.35em;
+		max-width: 30em;
+		margin-bottom: 2em;
+
+		label {
+			display: block;
+			font-weight: bold;
+			padding-bottom: 0.1em;
+		}
+
+		input[type="text"],
+		input[type="password"] {
+			width: 100%;
+			display: block;
+			padding: 0.8em 1.1em;
+			border: 2px solid #CCC;
+			border-radius: 0.35em;
+		}
+
+		p {
+			padding-bottom: 1.5em;
+
+			&:last-of-type {
+				padding: 0;
+			}
+		}
+	}
+}

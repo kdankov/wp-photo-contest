@@ -1,0 +1,105 @@
+.listing {
+	padding: 0;
+	margin: 0;
+
+	.background,
+	& > li {
+		overflow: hidden;
+		border-radius: 0.35em;
+	}
+
+	& > li {
+		display: block;
+		width: 100%;
+		justify-content: space-between;
+		align-items: stretch;
+		list-style: none outside;
+		margin-bottom: 2em;
+		position: relative;
+		background: #EEE;
+		overflow: hidden;
+
+		&:after {
+			display: block;
+			content: '';
+			background: linear-gradient( to right, rgba(#EEE, 1), rgba(#EEE, 0.0));
+			position: absolute;
+			top: 0;
+			left: 39%;
+			right:0;
+			bottom: 0;
+			z-index: 5;
+		}
+	}
+
+	a {
+		height: 16em;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		padding: 3em;
+		color: #333;
+		position: relative;
+		z-index: 10;
+
+		&:hover {
+			background: linear-gradient( to right, rgba(#FFF, 1), rgba(#EEE, 0.0));
+			box-shadow: 0 0 0 2px #EEE inset;
+
+			.title .theme {
+				color: #f6653c;
+				text-decoration: underline;
+			}
+		}
+
+		.title {
+			font-size: 1.2em;
+
+			.theme {
+				font-weight: bold;
+				font-size: 1.4em;
+			}
+		}
+
+		.dates {
+			padding-top: 5em;
+
+			span {
+				display: inline;
+			}
+		}
+	}
+
+	span {
+		display: block;
+	}
+
+	.background {
+		width: 100%;
+		margin: 0.5em;
+		display: grid;
+		justify-content: end;
+		grid-gap: 0.5em;
+		grid-template-columns: repeat(3, 15em);
+		grid-template-rows: repeat(2, 15em);
+		position: absolute;
+		top: 0;
+		right: 0;
+
+		li {
+			display: block;
+			overflow: hidden;
+			position: relative;
+			padding: 0;
+			margin: 0;
+
+			img {
+				display: block;
+				height: 100%;
+				width: auto;
+				margin: 0;
+				padding: 0;
+			}
+		}
+	}
+}

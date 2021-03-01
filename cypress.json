@@ -1,0 +1,7 @@
+{
+    "baseUrl": "http://photos.givingforce.online",
+    "defaultCommandTimeout": 5000,
+    "pageLoadTimeout": 8000,
+    "viewportWidth": 1440,
+    "viewportHeight": 800
+}

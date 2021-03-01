@@ -1,0 +1,56 @@
+.single-image {
+	img {
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+
+	.entry-header {
+		background: #EEE;
+		padding: 2em;
+		border-radius: 0.4em;
+		margin-bottom: 2em;
+
+		h1 {
+			padding-bottom: 0.5em;
+		}
+
+		h3 {
+			padding: 1rem 0 0.5rem;
+		}
+
+		ul {
+			display: flex;
+
+			li {
+				display: block;
+
+				a:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+
+		p {
+			padding-bottom: 1.5em;
+			max-width: 45em;
+
+			&:last-of-type {
+				padding-bottom: 0;
+			}
+		}
+	}
+
+	.entry-image {
+		border: 4px solid #DDD;
+		padding: 1em;
+		border-radius: 0.6em;
+		max-width: 1200px;
+		margin: 0 auto;
+
+		img {
+			border-radius: 0.3em;
+			margin: 0 auto;
+		}
+	}
+}

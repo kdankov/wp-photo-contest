@@ -1,0 +1,64 @@
+/*
+ * Gravity Forms
+ */
+.gform_wrapper {
+	padding: 0;
+}
+
+.gform_wrapper li {
+	list-style: none outside;
+	display: block;
+}
+
+.gform_wrapper input,
+.gform_wrapper textarea {
+	display: block;
+	border: 2px solid #CCC;
+	border-radius: 0.3em;
+	padding: 0.7em 1.1em;
+	outline: none;
+
+	&:focus {
+		border-color: orange;
+	}
+}
+
+li.gfield {
+	display: block;
+	padding-bottom: 1em;
+
+	&.gform_hidden {
+		display: none;
+	}
+}
+
+.ginput_container {
+	display: flex;
+}
+
+.ginput_container input,
+.ginput_container textarea {
+	flex: 1 1 auto;
+	background: #FFF;
+}
+
+label.gfield_label {
+	font-weight: bold;
+
+	.gfield_required {
+		color: #C00;
+		padding-left: 0.35em;
+	}
+}
+
+textarea.textarea.small {
+	height: 5em;
+}
+
+
+.ginput_container_fileupload {
+	position: relative;
+
+	input[type="file"] {
+	}
+}
